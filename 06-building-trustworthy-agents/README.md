@@ -181,6 +181,16 @@ await Console(stream)
 
 ```
 
+## Illustration statistique : p-hacking et Diff-in-Diff (R)
+
+Pour montrer comment les p-values peuvent varier selon la définition de l'output, les hyperparamètres (choix de spécification), la taille d'échantillon ou les sous-groupes, vous pouvez exécuter le script R suivant :
+
+```bash
+Rscript code_samples/diff_in_diff_p_hacking.R
+```
+
+Le script génère un échantillon simulé, applique une estimation Diff-in-Diff, puis compare les p-values selon différents choix analytiques (outcome, winsorisation, inclusion de covariable, taille d'échantillon, sous-groupes) afin d'illustrer le p-hacking, le HARKing et le cherry-picking.
+
 ## Conclusion
 
 Building trustworthy AI agents requires careful design, robust security measures, and continuous iteration. By implementing structured meta prompting systems, understanding potential threats, and applying mitigation strategies, developers can create AI agents that are both safe and effective. Additionally, incorporating a human-in-the-loop approach ensures that AI agents remain aligned with user needs while minimizing risks. As AI continues to evolve, maintaining a proactive stance on security, privacy, and ethical considerations will be key to fostering trust and reliability in AI-driven systems.
